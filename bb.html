@@ -968,7 +968,7 @@
         <div class="webinfo-item">
           <div>最后活动时间：</div>
           
-            <div id="last-update" style="display: none;">Fri Jan 15 2021 03:10:06 GMT+0800 (Central Standard Time)</div>
+            <div id="last-update" style="display: none;">Fri Jan 15 2021 03:27:13 GMT+0800 (Central Standard Time)</div>
             <div id="last-update-show">2021-01-15 日</div>
           
         </div>
@@ -1046,7 +1046,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text">{{.Title}}</span></a></li></ol>
     </div>
   </section>
 
@@ -1074,11 +1074,12 @@
   
 
   
-  <div class="post">
-	  <h2 class="post-title"></h2>
-	    <div class="post-content">
-		        <div id="bber"></div>
-			  </div>
+  {{ define "main" }}
+<div class="post">
+	<h2 class="post-title">{{.Title}}</h2>
+<div class="post-content">
+<div id="bber"></div>
+</div>
 </div>
 <style>
   .timeline ul {margin:0;}
@@ -1123,7 +1124,7 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-15T03:09:54+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-15T03:27:01+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
     <p>更新于：Jan 15, 2021</p>
