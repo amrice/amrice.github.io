@@ -16,7 +16,7 @@
 
   <!-- 页面元数据 -->
   
-  <title>Hello World - Eyte</title>
+  <title>Eyte</title>
   
 
   
@@ -668,7 +668,7 @@
 
   
   
-      <div class='cover-wrapper post featured' style="display: none;">
+      <div class='cover-wrapper page featured' style="display: none;">
         <canvas id="header_canvas" style="position:absolute;bottom:0;z-index: 1;" width="900" height="350"></canvas>
         
           <div class='cover-backstretch'></div>
@@ -756,8 +756,8 @@
 
 
 <div id="pjax-data" style="display: none">
-  <div id="pjax-ispage">true</div>
-  <div id="pjax-pageTitle">Hello World</div>
+  <div id="pjax-ispage">false</div>
+  <div id="pjax-pageTitle"></div>
   <div id="pjax-enable-cover">true</div>
   <div id="pjax-comment-path"></div>
   <div id="pjax-comment-placeholder"></div>
@@ -1046,7 +1046,7 @@
 
 
     <div class='content'>
-        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link" href="#Quick-Start"><span class="toc-text">Quick Start</span></a><ol class="toc-child"><li class="toc-item toc-level-3"><a class="toc-link" href="#Create-a-new-post"><span class="toc-text">Create a new post</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Run-server"><span class="toc-text">Run server</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Generate-static-files"><span class="toc-text">Generate static files</span></a></li><li class="toc-item toc-level-3"><a class="toc-link" href="#Deploy-to-remote-sites"><span class="toc-text">Deploy to remote sites</span></a></li></ol></li></ol>
+        <ol class="toc"><li class="toc-item toc-level-2"><a class="toc-link"><span class="toc-text"></span></a></li></ol>
     </div>
   </section>
 
@@ -1058,8 +1058,8 @@
 
 <div class='l_main'>
   <article
-  class="article post white-box reveal md shadow floatable article-type-post"
-  id="post" itemscope itemprop="blogPost">
+  class="article post white-box reveal md shadow floatable article-type-page"
+  id="page" itemscope itemprop="blogPost">
   
 
 
@@ -1068,103 +1068,52 @@
     
     
     
-      <h1 class="title">
-        Hello World
-      </h1>
-      <div class='new-meta-box'>
-        
-          
-            
-<div class='new-meta-item author'>
-  <a class='author' href="/" rel="nofollow">
-    <img no-lazy src="https://cdn.jsdelivr.net/gh/amrice/jc1@main/timg.webp">
-    <p>Eyte</p>
-  </a>
+  </div>
+
+
+  
+
+  
+  <div class="post">
+	  <h2 class="post-title"></h2>
+	    <div class="post-content">
+		        <div id="bber"></div>
+			  </div>
 </div>
-
-          
-        
-          
-            
-
-          
-        
-          
-            <div class="new-meta-item date">
-  <a class='notlink'>
-    <i class="fal fa-calendar-alt fa-fw" aria-hidden="true"></i>
-    <p>发布于：Jan 2, 2021</p>
-  </a>
-</div>
-
-          
-        
-          
-            
-  <div class="new-meta-item browse leancloud">
-    <a class='notlink'>
-      
-      <div id="lc-pv" data-title="Hello World" data-path="/2021/01/02/hello-world/">
-        <i class="fal fa-eye fa-fw" aria-hidden="true"></i>
-        <span id='number'><i class="fas fa-circle-notch fa-spin fa-fw" aria-hidden="true"></i></span>
-        次浏览
-      </div>
-    </a>
-  </div>
-
-
-          
-        
-      </div>
-    
-  </div>
-
+<style>
+  .timeline ul {margin:0;}
+    .timeline ul li {background:#3b3d42;list-style-type:none;position:relative;width:3px;margin-left:2em;padding:0.8em 0 2em;}
+      .timeline ul li::after {transform: rotate(45deg);content:'';background-color: #3b3d42;display: block;position: absolute;top: 10px;left: -5px;width: 0.8em;height: 0.8em;outline: 15px solid #fff;}
+        .timeline ul li div {position:relative;top:-13px;left:3em;width:670px;padding:0px 16px 0px;}
+	  .timeline ul li p.datatime{color: #fafafa;font-size: 0.75em;font-style: italic;background-color: #3b3d42;display: inline-block;padding:0.25em 1em 0.2em 1em;}
+	    .timeline ul li p.datacont{margin:0.65em 0 0.3em;}
+	      .timeline ul li p.datacont img{display:block;width:100%;}
+	        .timeline ul li p.datacont img[src*="emotion"]{display:inline-block;width:auto;}
+		  .timeline ul li p.datafrom{color: #aaa;font-size: 0.75em !important;font-style: italic;}
+		    .timeline ul li p{margin:0;font-size:16px;letter-spacing:1px;color: #3b3d42;}
+		      button{border-radius:0;}
+		        .dark-theme .timeline ul li div p{color:#fafafa;}
+			  .dark-theme .timeline ul li div p svg{fill:#fafafa;}
+			    .dark-theme .timeline ul li p.datafrom{color: #aaa;}
+			      .dark-theme .timeline ul li{background:#3b3d42;}
+			        .dark-theme .timeline ul li::after{outline: 15px solid #292a2d;}
+				  @media (max-width:860px) {
+					      .timeline ul li{margin-left:0;}
+					          .timeline ul li div{width:calc(100vw - 75px);left:30px;}
+						    }
+</style>
+<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/TencentCloudBase/tcb-js-sdk@master/tcbjs/1.10.10/tcb.js"></script>
+<script src="https://cdn.jsdelivr.net/gh/buddys/qq-wechat-emotion-parser@master/dist/qq-wechat-emotion-parser.min.js"></script>
+		<script>
+			  const app = tcb.init({
+							        env: 'bb-f5c0f', //这里是你的环境id
+							        //region: "ap-guangzhou"
+							    })
+		</script>
+		<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/lmm214/bber@0.0.1/bber.js"></script>
+		
 
   
-
-  
-  <p>Welcome to <a target="_blank" rel="noopener" href="https://hexo.io/">Hexo</a>! This is your very first post. Check <a target="_blank" rel="noopener" href="https://hexo.io/docs/">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a target="_blank" rel="noopener" href="https://hexo.io/docs/troubleshooting.html">troubleshooting</a> or you can ask me on <a target="_blank" rel="noopener" href="https://github.com/hexojs/hexo/issues">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo new <span class="string">&quot;My New Post&quot;</span></span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/writing.html">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo server</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/server.html">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo generate</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/generating.html">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">$ hexo deploy</span><br></pre></td></tr></table></figure>
-<p>More info: <a target="_blank" rel="noopener" href="https://hexo.io/docs/one-command-deployment.html">Deployment</a></p>
-
-  
-  
-  
-  <div class='footer'>
-    
-    
-    
-  <div class="related_posts">
-    <section class='header'>
-      <i class="fal fa-bookmark fa-fw" aria-hidden="true"></i><span>相关文章</span>
-    </section>
-    <section class='body'>
-      <div class="vlts-rps"><a class="item" href="/2021/01/03/test/" title="test" rel="bookmark "><img src="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" class="lazyload" data-srcset="https://cdn.jsdelivr.net/gh/volantis-x/cdn-wallpaper-minimalist/2020/046.jpg" srcset="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAABGdBTUEAALGPC/xhBQAAADhlWElmTU0AKgAAAAgAAYdpAAQAAAABAAAAGgAAAAAAAqACAAQAAAABAAAAAaADAAQAAAABAAAAAQAAAADa6r/EAAAAC0lEQVQIHWNgAAIAAAUAAY27m/MAAAAASUVORK5CYII=" /><span class="title">test</span></a></div></section></div>
-    
-    
-    <div class='copyright'>
-      <blockquote>
-        
-        
-        <p>博客内容遵循 署名-非商业性使用-相同方式共享 4.0 国际 (CC BY-NC-SA 4.0) 协议</p>
-
-        
-        
-        
-        <p>本文永久链接是：<a href=http://amejy.love/2021/01/02/hello-world/>http://amejy.love/2021/01/02/hello-world/</a></p>
-        
-        
-      </blockquote>
-    </div>
-    
-    
-  </div>
   
   
   
@@ -1174,10 +1123,10 @@
     <div class='new-meta-box'>
       
         
-          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-02T23:08:20+08:00">
+          <div class="new-meta-item date" itemprop="dateUpdated" datetime="2021-01-15T03:09:54+08:00">
   <a class='notlink'>
     <i class="fal fa-edit fa-fw" aria-hidden="true"></i>
-    <p>更新于：Jan 2, 2021</p>
+    <p>更新于：Jan 15, 2021</p>
   </a>
 </div>
 
@@ -1196,7 +1145,7 @@
       
         <a class="-mob-share-qq" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://amejy.love/2021/01/02/hello-world/&title=Hello World - Eyte&summary="
+          target="_blank" href="http://connect.qq.com/widget/shareqq/index.html?url=http://amejy.love/bb.html&title= - Eyte&summary="
           
           >
           
@@ -1208,7 +1157,7 @@
       
         <a class="-mob-share-qzone" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://amejy.love/2021/01/02/hello-world/&title=Hello World - Eyte&summary="
+          target="_blank" href="https://sns.qzone.qq.com/cgi-bin/qzshare/cgi_qzshare_onekey?url=http://amejy.love/bb.html&title= - Eyte&summary="
           
           >
           
@@ -1220,7 +1169,7 @@
       
         <a class="-mob-share-weibo" title="" rel="external nofollow noopener noreferrer noopener"
           
-          target="_blank" href="http://service.weibo.com/share/share.php?url=http://amejy.love/2021/01/02/hello-world/&title=Hello World - Eyte&summary="
+          target="_blank" href="http://service.weibo.com/share/share.php?url=http://amejy.love/bb.html&title= - Eyte&summary="
           
           >
           
@@ -1248,17 +1197,6 @@
   
 
   
-  <div class="prev-next">
-    
-    <a class='prev' href='/2021/01/03/test/'>
-      <p class='title'><i class="fas fa-chevron-left" aria-hidden="true"></i>test</p>
-      <p class='content'>test1
-</p>
-    </a>
-    
-    
-  </div>
-  
 </article>
 
 
@@ -1278,6 +1216,9 @@
 
 
 </div>
+
+
+
       </div>
       
   
